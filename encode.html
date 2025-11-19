@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QnDHTML - Encoder</title>
+  <link rel="icon" type="image/png" href="assets/qnd_favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="encoder.js" defer></script>
+</head>
+
+<body>
+  <div class="parent-container">
+    <h1>QnDHTML - Encoder</h1>
+
+    <div class="form-row">
+      <label for="method">Encoding Method:</label>
+      <select name="method" id="method">
+        <option value="uri">HTML - URI</option>
+        <option value="base64">HTML - Base64</option>
+        <option value="options">JSON - Options</option>
+      </select>
+    </div>
+
+    <div id="encode-html" style="display:block;">
+      <div class="form-row">
+        <label for="html">HTML:</label>
+        <input type="text" id="html" name="html" class="htmlbox">
+      </div>
+    </div>
+
+    <div id="encode-settings" style="display:none;">
+      <div class="form-row">
+        <label for="title">Page Title:</label>
+        <input type="text" id="title" name="title">
+      </div>
+      <div class="form-row">
+        <label for="iconurl">Favicon URL:</label>
+        <input type="url" id="iconurl" name="iconurl">
+      </div>
+    </div>
+
+    <button id="encode-btn" class="encode-btn">Encode</button>
+
+    <div id="resultsblock" class="resultblock" style="display: none;">
+      <div class="inner">
+        <pre><code name="result" id="result"></code></pre>
+      </div>
+    </div>
+    <a id="link" href="https://github.com/GalaxyGaming2000/QnDHTML">Made For QnDHTML</a>
+  </div>
+</body>
+
+</html>
