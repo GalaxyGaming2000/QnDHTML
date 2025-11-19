@@ -1,5 +1,7 @@
-![Logo](https://github.com/GalaxyGaming2000/QnDHTML/blob/02017fa33bbdc0e2dd3ee6aa6820fe1d692f15db/assets/qnd_logo.png)
-
+---
+title: Home
+nav_order: 1
+---
 
 # QnDHTML Docs
 

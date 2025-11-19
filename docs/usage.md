@@ -1,3 +1,8 @@
+---
+title: Usage & Examples
+nav_order: 2
+---
+
 # QnDHTML: Usage & Examples
 
 ### Parameters
