@@ -17,7 +17,19 @@ function normalizeUrl(url) {
     return url;
 }
 
+function safeUrlDecode(input) {
+    let prev = input, next;
+    while (true) {
+        try { next = decodeURIComponent(prev); }
+        catch { break; }
+        if (next === prev) break;
+        prev = next;
+    }
+    return prev;
+}
+
 function b64DecodeUnicode(str) {
+    str = safeUrlDecode(str);
     str = str.replace(/ /g, '+');
     str = str.replace(/\s/g, '');
     return decodeURIComponent(atob(str).split('').map(function(c) {
