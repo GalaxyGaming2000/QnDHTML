@@ -1,4 +1,4 @@
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/GalaxyGaming2000/QnDHTML/blob/02017fa33bbdc0e2dd3ee6aa6820fe1d692f15db/assets/qnd_logo.png)
 
 
 # QnDHTML
