@@ -17,6 +17,13 @@ function normalizeUrl(url) {
     return url;
 }
 
+function b64DecodeUnicode(str) {
+    str = str.replace(/ /g, '+');
+    str = str.replace(/\s/g, '');
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}
 
 async function DecodeParams(params)
 {
@@ -28,6 +35,7 @@ async function DecodeParams(params)
 
     if (param_count === 0) {
         ProvideMessage("No valid parameter was given.");
+        return null
     } else if (param_count > 1) {
         ProvideMessage(`Too many parameters. (Expected 1, got: ${param_count})`);
     } else {
@@ -58,7 +66,7 @@ async function DecodeParams(params)
             }
         } else if (encoded_base64) {
             try {
-                const html = atob(encoded_base64)
+                const html = b64DecodeUnicode(encoded_base64)
                 return html
             }
             catch (e) {
