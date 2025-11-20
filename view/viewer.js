@@ -1,4 +1,4 @@
-const version = "V1.0.0";
+const version = "V2.0.0";
 let params = new URLSearchParams(document.location.search);
 
 function ProvideMessage(message) {

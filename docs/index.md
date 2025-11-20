@@ -8,7 +8,7 @@ nav_order: 1
 
 A minimal HTML renderer that reads HTML from the URL.
 
-Use QnDHTML @ [https://galaxygaming2000.github.io/QnDHTML/](https://galaxygaming2000.github.io/QnDHTML/)
+Use QnDHTML @ [https://galaxygaming2000.github.io/QnDHTML/view](https://galaxygaming2000.github.io/QnDHTML/view)
 
 See Usage And Examples [Here](https://galaxygaming2000.github.io/QnDHTML/docs/usage)
 

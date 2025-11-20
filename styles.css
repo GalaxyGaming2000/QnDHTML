@@ -17,6 +17,28 @@ a:active {
     color: #3b9b3e;
 }
 
+a.link-btn:link,
+a.link-btn:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+a.link-btn:hover,
+a.link-btn:active {
+    color: #555;
+}
+
+a.link-btn-secondary:link,
+a.link-btn-secondary:visited {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+a.link-btn-secondary:hover,
+a.link-btn-secondary:active {
+    color: #a8a8a8;
+}
+
 .parent-container {
     display: flex;
     justify-content: center;
@@ -40,6 +62,14 @@ h1 {
     width: 100%;
     max-width: 400px;
     gap: 5px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 input[type=text],
@@ -70,6 +100,30 @@ select {
     border-radius: 5px;
     cursor: pointer;
     max-width: 400px;
+    width: 100%;
+}
+
+.link-btn {
+    padding: 10px 20px;
+    background-color: #52c456;
+    color: #222;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 250px;
+    width: 100%;
+}
+
+.link-btn-secondary {
+    padding: 5px 5px;
+    background-color: #555;
+    color: #e4e4e4;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 100px;
     width: 100%;
 }
 
