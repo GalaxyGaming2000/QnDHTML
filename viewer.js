@@ -1,3 +1,4 @@
+const version = "V1.0.0";
 let params = new URLSearchParams(document.location.search);
 
 function ProvideMessage(message) {
@@ -46,10 +47,10 @@ async function DecodeParams(params)
     const param_count = [encoded_html, encoded_url, encoded_base64].filter(Boolean).length;
 
     if (param_count === 0) {
-        ProvideMessage("No valid parameter was given.");
+        ProvideMessage("No valid parameter was given.\nSee: https://galaxygaming2000.github.io/QnDHTML/docs/usage");
         return null
     } else if (param_count > 1) {
-        ProvideMessage(`Too many parameters. (Expected 1, got: ${param_count})`);
+        ProvideMessage(`Too many parameters. (Expected 1, got: ${param_count})\nSee: https://galaxygaming2000.github.io/QnDHTML/docs/usage`);
     } else {
         if (encoded_html) {
             try {
@@ -86,7 +87,7 @@ async function DecodeParams(params)
                 return null
             }
         } else {
-            ProvideMessage(`An unknown parameter was given.`)
+            ProvideMessage(`An unknown parameter was given.\nSee: https://galaxygaming2000.github.io/QnDHTML/docs/usage`)
             return null
         }
     }
@@ -123,9 +124,13 @@ function DisplayHTML(html) {
 
     elemiframe.srcdoc = html;
     document.body.appendChild(elemiframe);
+
+    console.log("This page was rendered by QnDHTML - https://github.com/GalaxyGaming2000/QnDHTML");
 }
 
 async function main() {
+    ProvideMessage(`QnDHTML - ${version} - https://github.com/GalaxyGaming2000/QnDHTML`)
+
     const html = await DecodeParams(params)
     DoSettingsThings(params)
 
