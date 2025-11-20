@@ -22,4 +22,4 @@ Use QnDHTML @ https://galaxygaming2000.github.io/QnDHTML/
 - TODO (all the above)
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://galaxygaming2000.github.io/QnDHTML/docs/)

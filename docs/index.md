@@ -10,7 +10,7 @@ A minimal HTML renderer that reads HTML from the URL.
 
 Use QnDHTML @ [https://galaxygaming2000.github.io/QnDHTML/](https://galaxygaming2000.github.io/QnDHTML/)
 
-See Usage And Examples [Here](https://galaxygaming2000.github.io/docs/usage)
+See Usage And Examples [Here](https://galaxygaming2000.github.io/QnDHTML/docs/usage)
 
 
 ## Contributing
