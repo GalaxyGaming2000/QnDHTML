@@ -18,8 +18,8 @@ Use QnDHTML @ https://galaxygaming2000.github.io/QnDHTML/
 - 'settings' > optional parameter for setting the title and favicon.
 
 ### Examples:
+See [Usage And Examples](https://galaxygaming2000.github.io/QnDHTML/docs/usage.html#examples)
 
-- TODO (all the above)
 ## Documentation
 
 [Documentation](https://galaxygaming2000.github.io/QnDHTML/docs/)
